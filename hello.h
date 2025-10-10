@@ -4,7 +4,7 @@
 #include <string>
 
 namespace myproject {
-	void sayHello(const std::string& name);
+	void sayHello();
 }
 
 #endif
