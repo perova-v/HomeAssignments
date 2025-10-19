@@ -2,7 +2,7 @@ PROJECT = hello
 CXX = g++
 CXXFLAGS = -Wall -Wextra
 SRC = main.cpp hello.cpp
-OBJ = $(SRC: .cpp=.o)
+OBJ = $(SRC:.cpp=.o)
 
 .PHONY: all clean
 
