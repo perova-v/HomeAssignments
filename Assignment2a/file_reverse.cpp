@@ -5,6 +5,7 @@
  */
 
 #include "file_reverse.h"
+#include <iostream>
 #include <filesystem>
 #include <fstream>
 #include <algorithm>
@@ -25,8 +26,8 @@ void fileReverse(const std::string& inputFile) {
     std::string outputFile = "reversed_" + fs::path(inputFile).filename().string();
 
     std::ofstream outFile(outputFile, std::ios::binary);
-    outFile.writer(buffer, fileSize);
-    outFile.close()
+    outFile.write(buffer, fileSize);
+    outFile.close();
 
     delete[] buffer;
 

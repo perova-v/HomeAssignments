@@ -4,8 +4,8 @@
  * My project number 2a
  */
 
-#ifndef FILE_REVERSE.H
-#define FILE_REVERSE.H
+#ifndef FILE_REVERSE_H
+#define FILE_REVERSE_H
 
 #include <string>
 
