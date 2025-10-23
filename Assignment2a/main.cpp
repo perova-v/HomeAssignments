@@ -12,7 +12,7 @@ int main() {
     std::cout << "Enter the path of the source file: ";
     std::getline(std::cin, inputFile);
 
-    reverseFile(inputFile);
+    fileReverse(inputFile);
 
     return 0;
 }
