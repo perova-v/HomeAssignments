@@ -15,4 +15,4 @@ $(PROJECT): $(OBJ)
 	$(CXX) -c -o $@ $< $(CXXFLAGS)
 
 clean:
-	rm −f $(OBJ) $(PROJECT)
+	rm -f $(OBJ) $(PROJECT)
