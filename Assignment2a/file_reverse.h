@@ -9,6 +9,6 @@
 
 #include <string>
 
-void reverseFile(const std::string& inputFile);
+void fileReverse(const std::string& inputFile);
 
 #endif
