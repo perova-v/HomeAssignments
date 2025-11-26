@@ -22,7 +22,7 @@ Stack::~Stack() {
 }
 
 void Stack::push(double value) {
-    if (topPtr - data >= capacity) {
+    if (static_cast<size_t>(topPtr - data) >= capacity) {
         throw std::overflow_error("Stack overflow");
     }
     *topPtr = value;
