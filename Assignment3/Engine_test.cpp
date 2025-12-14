@@ -7,7 +7,8 @@
 #include <gtest/gtest.h>
 #include "Engine.h"
 
-TEST(EngineTest, CheckPower) {
+TEST(EngineTest, CheckPower)
+{
     Engine engine(500);
     EXPECT_EQ(engine.getPower(), 500);
 }

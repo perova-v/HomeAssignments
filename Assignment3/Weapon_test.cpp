@@ -8,7 +8,8 @@
 #include <gtest/gtest.h>
 #include "Weapon.h"
 
-TEST(WeaponTest, CheckFields) {
+TEST(WeaponTest, CheckFields)
+{
     Weapon gun("Laser", 99);
     EXPECT_EQ(gun.getType(), "Laser");
     EXPECT_EQ(gun.getDamage(), 99);
