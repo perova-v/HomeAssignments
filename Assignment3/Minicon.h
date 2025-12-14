@@ -1,6 +1,6 @@
 /*
  * Perova Varvara
- * st141846@student.sbpu.ru
+ * st141846@student.spbu.ru
  * My project number 4
  */
 

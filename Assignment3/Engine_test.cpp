@@ -1,7 +1,7 @@
 /*
  * Perova Varvara
  * st141846@student.spbu.ru
- * My project number 3
+ * My project number 4
  */
 
 #include <gtest/gtest.h>
