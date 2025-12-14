@@ -8,6 +8,56 @@
 #include "Matrix.h"
 #include "Rational.h"
 
+
+TEST(RationalTest, ConstructorAndSimplify) {
+    Rational r1(2, 4);
+    EXPECT_EQ(r1.getNum(), 1);
+    EXPECT_EQ(r1.getDenom(), 2);
+
+    Rational r2(1, -2);
+    EXPECT_EQ(r2.getNum(), -1);
+    EXPECT_EQ(r2.getDenom(), 2);
+
+    Rational r3(-2, -3);
+    EXPECT_EQ(r3.getNum(), 2);
+    EXPECT_EQ(r3.getDenom(), 3);
+
+    Rational r4(0, 5);
+    EXPECT_EQ(r4.getNum(), 0);
+    EXPECT_EQ(r4.getDenom(), 1);
+}
+
+TEST(RationalTest, Arithmetic) {
+    Rational a(1, 2);
+    Rational b(1, 3);
+
+    Rational sum = a + b;
+    EXPECT_EQ(sum, Rational(5, 6));
+
+    Rational sub = a - b;
+    EXPECT_EQ(sub, Rational(1, 6));
+
+    Rational c(2, 3);
+    Rational mult = a * c;
+    EXPECT_EQ(mult, Rational(1, 3));
+}
+
+TEST(RationalTest, Comparison) {
+    Rational a(1, 2);
+    Rational b(2, 4);
+    Rational c(1, 3);
+
+    EXPECT_TRUE(a == b);
+    EXPECT_TRUE(a != c);
+}
+
+TEST(RationalTest, ZeroDenominatorException) {
+    EXPECT_THROW(Rational(1, 0), std::invalid_argument);
+}
+
+
+
+
 TEST(MatrixInt, BasicOperations)
 {
     Matrix<int> m1(2, 2);
