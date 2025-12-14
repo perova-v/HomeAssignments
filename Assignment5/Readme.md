@@ -9,10 +9,7 @@ st141846@student.spbu.ru
 ## Description
 Implement the template class "matrix 𝑚 × 𝑛".
 Implement operations:
-• Multiplication by scalar
-• Matrix addition
-• Matrix multiplication
-• Transposition
+multiplication by scalar, matrix addition, matrix multiplication, transposition
 
 ## Build
 
