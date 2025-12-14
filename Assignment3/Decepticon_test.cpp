@@ -12,3 +12,8 @@ TEST(DecepticonTest, CheckDanger) {
     EXPECT_EQ(megatron.getDangerLevel(), 9000);
     EXPECT_TRUE(megatron.fly());
 }
+
+TEST(DecepticonTest, Flight) {
+    Decepticon starscream("Starscream", 5, 50, nullptr, 100);
+    EXPECT_TRUE(starscream.fly());
+}
