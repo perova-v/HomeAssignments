@@ -1,7 +1,7 @@
 /*
  * Perova Varvara
  * st141846@student.spbu.ru
- * My project number 3
+ * My project number 4
  */
 
 #ifndef WEAPON_H
@@ -9,7 +9,8 @@
 
 #include <string>
 
-class Weapon {
+class Weapon
+{
 public:
     Weapon(std::string type, unsigned int damage);
     std::string getType() const;
