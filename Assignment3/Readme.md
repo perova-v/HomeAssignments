@@ -27,4 +27,5 @@ make test
 ./transformers
 
 #### Tests:
-/transformers_test
+./test-transformers
+
